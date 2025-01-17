@@ -33,4 +33,11 @@ export class Main {
             return 'OK';
         }
     };
+    getValidePassword(password) {
+        if (this.getPassword1NumberMin(password) == 'OK' && this.getPassword1SpecialCharMin(password) == 'OK' && this.getPassword8MinChar(password) == 'OK' && this.getPasswordNoIPL(password) == 'OK') {
+            return 'OK';
+        } else {
+            return 'KO';
+        }
+    }
 };

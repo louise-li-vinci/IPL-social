@@ -12,6 +12,13 @@ describe("return valid password", function(){
 
         expect(result).toBe('OK');
     });
+    it("should return OK wirh valid password'", function () {
+        let main = new Main();
+
+        let result = main.getValidePassword('AZERT?1234567');
+
+        expect(result).toBe('OK');
+    });
 })
 
 function Min1Number() {

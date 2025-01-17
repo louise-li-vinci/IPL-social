@@ -10,3 +10,7 @@
   npm test
 - 
 getPassword8MinChar() = regarde si le mot de passe est plus grand que 7 character.
+getPassword1SpecialCharMin(password)
+getPassword1NumberMin(password)
+getPasswordNoIPL(password)
+getValidePassword(password)
