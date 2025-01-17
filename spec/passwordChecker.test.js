@@ -5,35 +5,35 @@ describe("return valid password", function(){
     it("should return OK with 12345678 as password", function () {
         let main = new Main();
  
-        let result = main.getPassword('12345678');
+        let result = main.getPassword8MinChar('12345678');
  
         expect(result).toBe('OK');
     });
     it("should return OK with 123456789 as password", function () {
         let main = new Main();
  
-        let result = main.getPassword('123456789');
+        let result = main.getPassword8MinChar('123456789');
  
         expect(result).toBe('OK');
     });
     it("should return OK with ten character or more then 7 as password", function () {
         let main = new Main();
  
-        let result = main.getPassword('1234567890');
+        let result = main.getPassword8MinChar('1234567890');
  
         expect(result).toBe('OK');
     });
     it("should return KO with less then 8 as password", function () {
         let main = new Main();
  
-        let result = main.getPassword('123');
+        let result = main.getPassword8MinChar('123');
  
         expect(result).toBe('KO');
     });
     it("should return OK with letter and more then 7 as password", function () {
         let main = new Main();
  
-        let result = main.getPassword('azertyuiop');
+        let result = main.getPassword8MinChar('azertyuiop');
  
         expect(result).toBe('OK');
     });

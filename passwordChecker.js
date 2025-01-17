@@ -1,6 +1,6 @@
 export class Main {
 
-    getPassword(password) {
+    getPassword8MinChar(password) {
         
         if (password.length >= 8) 
             return 'OK';
