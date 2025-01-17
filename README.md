@@ -1,1 +1,10 @@
 # IPL-social
+- Li Louise louise.li@studnet.vinci.be
+- https://github.com/louise-li-vinci/IPL-social
+- Le code regard si le mot de pass est valid,
+  a.	Il doit contenir au moins 8 charactères.
+  b.	Il doit contenir au moins un charactère spécial.
+  c.	Il doit contenir au moins un chiffre.
+  d.	Il ne peut pas contenir la chaine de caractère « IPL » quel que soit sa casse (majuscule ou minuscule).
+- Ligne de commande de test jasmine
+  npm test
