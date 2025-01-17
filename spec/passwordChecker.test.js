@@ -8,5 +8,12 @@ describe("return valid password", function(){
         let result = main.getPassword(12345678);
  
         expect(result).toBe('OK');
+    });
+    it("should return OK with 123456789 as password", function () {
+        let main = new Main();
+ 
+        let result = main.getPassword(123456789);
+ 
+        expect(result).toBe('OK');
     })
 })
