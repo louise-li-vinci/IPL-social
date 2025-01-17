@@ -11,6 +11,13 @@ describe("return valid password", function(){
 
         expect(result).toBe('KO');
     });
+    it("should return OK with a number", function () {
+        let main = new Main();
+
+        let result = main.getPassword1NumberMin('AZER9TYUIOP');
+
+        expect(result).toBe('OK');
+    });
 })
 
 function Min1SpecialChar() {
