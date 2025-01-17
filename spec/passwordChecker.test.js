@@ -3,12 +3,19 @@ describe("return valid password", function(){
 
     
     Min8Char();
-    it("should return KO with without a special character", function () {
+    it("should return KO without a special character", function () {
         let main = new Main();
 
         let result = main. getPassword1SpecialCharMin('12345678');
 
         expect(result).toBe('KO');
+    });
+    it("should return OK with a special character", function () {
+        let main = new Main();
+
+        let result = main. getPassword1SpecialCharMin('12345678&');
+
+        expect(result).toBe('OK');
     });
 })
 
