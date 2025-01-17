@@ -1,11 +1,12 @@
 export class Main {
 
     getPassword(password) {
-        if(password === 12345678 || password === 123456789) 
+        
+        if (password.length >= 8) 
             return 'OK';
         else {
-                return 'KO';
-            }
+            return 'KO';
+        }
         
     }
     
