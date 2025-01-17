@@ -30,4 +30,11 @@ describe("return valid password", function(){
  
         expect(result).toBe('KO');
     });
+    it("should return OK with letter and more then 7 as password", function () {
+        let main = new Main();
+ 
+        let result = main.getPassword('azertyuiop');
+ 
+        expect(result).toBe('OK');
+    });
 })
