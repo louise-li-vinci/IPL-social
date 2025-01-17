@@ -1,5 +1,5 @@
 # IPL-social
-- Li Louise louise.li@studnet.vinci.be
+- Li Louise louise.li@student.vinci.be
 - https://github.com/louise-li-vinci/IPL-social
 - Le code regard si le mot de pass est valid,
   a.	Il doit contenir au moins 8 charactères.
