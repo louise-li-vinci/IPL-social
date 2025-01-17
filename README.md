@@ -8,3 +8,5 @@
   d.	Il ne peut pas contenir la chaine de caractère « IPL » quel que soit sa casse (majuscule ou minuscule).
 - Ligne de commande de test jasmine
   npm test
+- 
+getPassword8MinChar() = regarde si le mot de passe est plus grand que 7 character.

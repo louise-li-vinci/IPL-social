@@ -7,7 +7,14 @@ export class Main {
         else {
             return 'KO';
         }
-        
-    }
-    
+    };
+    getPassword1SpecialCharMin(password) {
+        let specialChar = ['!', '@', '#', '$', '%', '^', '&', '*', '(', ')', '_', '+', '-', '=', '[', ']', '{', '}', ';', "'", ':', '"', '\\', '|', ',', '.', '<', '>', '/', '?'];
+        for (let i = 0; i < password.length; i++) {
+            if (specialChar.includes(password[i])) {
+                return 'OK';
+            }
+        }
+        return 'KO';
+    };
 };
