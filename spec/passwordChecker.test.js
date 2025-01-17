@@ -17,6 +17,13 @@ describe("return valid password", function(){
 
         expect(result).toBe('OK');
     });
+    it("should return OK with 2 special character", function () {
+        let main = new Main();
+
+        let result = main. getPassword1SpecialCharMin('1234#5678&');
+
+        expect(result).toBe('OK');
+    });
 })
 
 function Min8Char() {
