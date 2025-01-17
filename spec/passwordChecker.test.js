@@ -4,6 +4,17 @@ describe("return valid password", function(){
     
     Min8Char();
     Min1SpecialChar();
+    Min1Number();
+    it("should return OK without without 'IPL'", function () {
+        let main = new Main();
+
+        let result = main.getPasswordNoIPL('AZERTYUIP234');
+
+        expect(result).toBe('OK');
+    });
+})
+
+function Min1Number() {
     it("should return KO without a number", function () {
         let main = new Main();
 
@@ -25,7 +36,7 @@ describe("return valid password", function(){
 
         expect(result).toBe('OK');
     });
-})
+}
 
 function Min1SpecialChar() {
     it("should return KO without a special character", function () {

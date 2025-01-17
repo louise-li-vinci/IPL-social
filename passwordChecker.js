@@ -26,4 +26,11 @@ export class Main {
         }
         return 'KO';
     }
+    getPasswordNoIPL(password) {
+        if (password.includes('IPL'||'ipl')) {
+            return 'KO';
+        }else{
+            return 'OK';
+        }
+    };
 };
