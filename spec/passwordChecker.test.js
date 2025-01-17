@@ -23,4 +23,11 @@ describe("return valid password", function(){
  
         expect(result).toBe('OK');
     });
+    it("should return KO with less then 8 as password", function () {
+        let main = new Main();
+ 
+        let result = main.getPassword('123');
+ 
+        expect(result).toBe('KO');
+    });
 })
