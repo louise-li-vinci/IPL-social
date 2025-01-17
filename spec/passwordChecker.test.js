@@ -3,28 +3,39 @@ describe("return valid password", function(){
 
     
     Min8Char();
+    Min1SpecialChar();
+    it("should return KO without a number", function () {
+        let main = new Main();
+
+        let result = main.getPassword1NumberMin('AZERTYUIOP');
+
+        expect(result).toBe('KO');
+    });
+})
+
+function Min1SpecialChar() {
     it("should return KO without a special character", function () {
         let main = new Main();
 
-        let result = main. getPassword1SpecialCharMin('12345678');
+        let result = main.getPassword1SpecialCharMin('12345678');
 
         expect(result).toBe('KO');
     });
     it("should return OK with a special character", function () {
         let main = new Main();
 
-        let result = main. getPassword1SpecialCharMin('12345678&');
+        let result = main.getPassword1SpecialCharMin('12345678&');
 
         expect(result).toBe('OK');
     });
     it("should return OK with 2 special character", function () {
         let main = new Main();
 
-        let result = main. getPassword1SpecialCharMin('1234#5678&');
+        let result = main.getPassword1SpecialCharMin('1234#5678&');
 
         expect(result).toBe('OK');
     });
-})
+}
 
 function Min8Char() {
     it("should return OK with 12345678 as password", function () {
