@@ -18,6 +18,13 @@ describe("return valid password", function(){
 
         expect(result).toBe('OK');
     });
+    it("should return OK with 2 number", function () {
+        let main = new Main();
+
+        let result = main.getPassword1NumberMin('AZER9TY4UIOP');
+
+        expect(result).toBe('OK');
+    });
 })
 
 function Min1SpecialChar() {
